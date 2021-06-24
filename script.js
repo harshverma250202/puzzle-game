@@ -367,7 +367,7 @@ function key(event) {
   var newblank;
   if (blank >= 0 && blank < num1 * num2) {
     if (event.keyCode == 39) {
-        
+      document.getElementById("bear2").play();   
     //   console.log("ok");
     //   // console.log(blank);
       if (blank % num2 != 0) {
@@ -381,7 +381,7 @@ function key(event) {
         countmoves();
       }
     } else if (event.keyCode == 40) {
-        
+         document.getElementById("bear2").play();
       if (blank > num1 - 1) {
 
         newblank = blank - num2;
@@ -393,7 +393,7 @@ function key(event) {
         countmoves();
       }
     } else if (event.keyCode == 37) {
-        
+         document.getElementById("bear2").play();
      
       if (blank % num2 != num2 - 1) {
         newblank = blank + 1;
@@ -405,7 +405,7 @@ function key(event) {
         countmoves();
       }
     } else if (event.keyCode == 38) {
-       
+        document.getElementById("bear2").play();
     //   console.log("ok");
     //   // console.log(blank);
       if (blank < num2 * (num1 - 1)) {
