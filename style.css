@@ -1,0 +1,113 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+
+.outerbox{
+  background-image:linear-gradient(to right,#b06ab3,#4568dc,#b06ab3);
+  position: absolute; 
+  width: 100%;
+  min-height: 100vh;
+  max-height: 10000vh;
+}
+
+/* .rowtimer{
+  padding: 10vh 0;
+} */
+.maincontent{
+  display: none;
+}
+
+
+#btnform{
+      
+  margin: auto;
+  width: 50%;
+}
+input{
+   
+    
+    margin: auto;
+    width: 50%;
+    height: 5vh;
+    padding: auto;
+    border: 2px solid rgb(90, 90, 155);
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .cell {
+    margin: 1%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-size: 1.8rem;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.78);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.78);
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.78);
+    
+
+
+  }
+  #timer,#moves,#namedisplay{
+    font-size: 1.8rem;
+  }
+  .cell:hover{
+    cursor: pointer;
+  }
+  @media(max-width:600px) {
+    .cell{
+      width: 45px;
+      height: 45px;
+      font-size: 1.2rem;
+      
+    }
+    #timer,#moves{
+      font-size: 1rem;
+    }
+
+    
+  }
+.mtcontent{
+  padding: auto;
+  vertical-align: middle;
+}
+
+
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+#btns1,#btns2,#btns3,#btns4{
+  height: 10vh;
+
+ 
+  font-size: x-large;
+}
