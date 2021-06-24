@@ -428,7 +428,7 @@ function key(event) {
 function time()
 {
 
-document.getElementById("timer").innerHTML= "TIME:" +intialtime%60 +" S";    
+document.getElementById("timer").innerHTML= "TIME:" +intialtime +" S";    
 ++intialtime;
 }
 
