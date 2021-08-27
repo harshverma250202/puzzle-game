@@ -111,3 +111,8 @@ input{
  
   font-size: x-large;
 }
+
+
+    .allinfo {
+      justify-content: space-around;
+    }
