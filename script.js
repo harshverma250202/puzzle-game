@@ -19,7 +19,7 @@ var array=[];
 if you dont enter your name it will assign you anonyous user  and keys are working fine
 on winning tou will see a modal opening a my name */
 
-
+// My comment
 // to prevent scroll on arrow key
 window.addEventListener("keydown", function(e) {
 
