@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MxN PUZZLE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/99d1df08d7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,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"
+        type="image/x-icon">
+
+</head>
+
+<body onload="onloadbody()">
+    <div class="outerbox">
+        <div class="container">
+            <div id="form1" class="d-flex flex-column justify-content-center pt-5">
+                <h1 class="d-flex justify-content-center pb-5">M X N PUZZLE</h1>
+                <input type="text" id="username" placeholder="NAME :" required /><br />
+                <input id="id1" type="number" name="M" placeholder="ROWS (M) :" required /><br />
+                <input id="id2" type="number" name="N" placeholder="COLS (N) :" required /><br />
+                <button id="btnform" class="btn btn-primary">submit</button>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <h1 style="text-align: center;">QUICK MATCH</h1>
+
+                <br>
+                <hr>
+                <div class="row  m-auto">
+                    <div class="mtcontent col-3 "><button id="btns1" class="btn btn-primary m-auto">2 x 1</button></div>
+                    <div class="mtcontent col-3"><button id="btns2" class="btn btn-primary m-auto">3x3</button></div>
+                    <div class="mtcontent col-3"><button id="btns3" class="btn btn-primary m-auto">4x4</button></div>
+                    <div class="mtcontent col-3"><button id="btns4" class="btn btn-primary m-auto">5x5</button></div>
+                </div>
+
+                <hr>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>Controls</h1>
+                <hr>
+                <h2>>>Arrow keys</h2>
+                <hr>
+                <h2>>>Mouse</h2>
+                <hr>
+                <h2>>>Tap</h2>
+
+            </div>
+
+            <div class="maincontent">
+                <div id="namedisplay" class="mtcontent col pb-5 pt-5 text-center"></div>
+                <hr />
+                <div class="row rowtimer">
+                    <div id="moves" class="mtcontent col-4 p-auto">MOVES:0</div>
+                    <div id="timer" class="mtcontent col-5 p-auto">TIME:0S</div>
+                    <button id="resetbtn" class="btn btn-primary col-3 p-auto w-25">
+            Reset
+          </button>
+                </div>
+                <hr />
+                <div class="topcontent">
+                    <div class="container1 mt-5 mb-5" id="mainbox"></div>
+                    <hr />
+                    <div class="leaderboard mb-5 mt-5">
+                        <h1 class="leaderhead" style="text-align: center;">Leaderboard</h1>
+                        <hr>
+                        <div class="row flex-nowrap">
+                            <div class="mtcontent col-1 p-auto">
+                                <h3></h3>NO. </h3>
+                            </div>
+                            <div class="mtcontent col-7 p-auto">
+                                <h3></h3>NAME : </h3>
+                            </div>
+                            <div class="mtcontent col-2 p-auto">
+                                <h3></h3>TIME </h3>
+                            </div>
+                            <div class="mtcontent col-2 p-auto">
+                                <h3></h3>MOVE </h3>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <!-- models -->
+            <!-- My comments -->
+
+            <button type="button" class="btn btn-primary" id="modalbtn" style="display: none" data-toggle="modal" data-target="#myModal"></button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">RESULT:</h4>
+                            <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div id="result"></div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <p> MADE BY HARSH VERMA </p>
+                            <button type="button" class="btn btn-primary" id="modalreset" data-dismiss="modal">
+                reset
+              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="bear1">
+    <source src="game-win-sound-effect.mp3">
+  </audio>
+    <audio id="bear2">
+    <source src="button-3.mp3">
+  </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
